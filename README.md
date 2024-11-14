@@ -1,3 +1,5 @@
 # ITWEB 200 Class code
 
-Hello This is version control
+Some change here.
+
+Hello This is version control is awesome
