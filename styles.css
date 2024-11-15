@@ -1,0 +1,39 @@
+#main-content {
+  color: aquamarine;
+}
+
+.main-paragraph {
+  color: maroon;
+}
+
+div p {
+  color: green;
+}
+
+p {
+  color: blue;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(62, 62, 227);
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.circle:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.fancy-button {
+    text-decoration: none;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    padding: 9px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
