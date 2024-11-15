@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Hello, world!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="label-first-number">First Number</span>
+          <input type="number" id="firstNumber" class="form-control" aria-label="Sizing example input"
+            aria-describedby="label-first-number">
+        </div>
+      </div>
+      <div class="col">
+        <select id="operation" class="form-select" aria-label="Select Operation">
+          <option selected>Please select Operation</option>
+          <option value="addition">Addition (+)</option>
+          <option value="substraction">Substraction (-)</option>
+          <option value="multiplication">Multiplication (*)</option>
+          <option value="division">division (/)</option>
+        </select>
+      </div>
+      <div class="col">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="label-second-number">Second Number</span>
+          <input type="number" id="secondNumber" class="form-control" aria-label="Sizing example input"
+            aria-describedby="label-second-number">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button id="calculate-button" class="btn btn-primary">Calculate</button>
+    </div>
+    <div class="row">
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script>
+    var firstNumber = document.getElementById('firstNumber')
+    var secondNumber = document.getElementById('secondNumber')
+    var calculateButton = document.getElementById('calculate-button')
+    var result = document.getElementById('result')
+    var selection = document.getElementById('operation')
+
+
+    function addNumbers(asdfg, num2) {
+      return asdfg + num2
+    }
+
+    function subNumbers(num1, cbnmvbnm) {
+      console.log('value of num1: ', num1)
+      console.log(selection)
+      console.log('value of cbnmvbnm: ', cbnmvbnm)
+      return num1 - cbnmvbnm
+    }
+
+    function multiplyNumbers(num1, num2) {
+      return num1 * num2
+    }
+
+    function divideNumbers(num1, num2) {
+      return num1 / num2
+    }
+
+    function handleCalculation() {
+      var calResult;
+      var zxcvzxcv = Number(firstNumber.value)
+      var num2 = Number(secondNumber.value)
+
+      if (selection.value == 'addition') {
+        calResult = addNumbers(zxcvzxcv, num2)
+      }
+      if (selection.value == 'substraction') {
+        calResult = subNumbers(zxcvzxcv, num2)
+      }
+      if (selection.value == 'multiplication') {
+        calResult = multiplyNumbers(zxcvzxcv, num2)
+      }
+      if (selection.value == 'division') {
+        calResult = divideNumbers(zxcvzxcv, num2)
+      }
+
+      result.innerText = calResult;
+    }
+
+    calculateButton.addEventListener('click', handleCalculation)
+
+
+  </script>
+</body>
+
+</html>
