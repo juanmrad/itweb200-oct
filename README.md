@@ -6,7 +6,10 @@ do change from feature 2
 
 Some change here.
 
-Some lines Changes from GitHub directly
+Some lines Changes from GitHub directly from the web vscode.
+
+
+Some more changes here.
 
 changes from feature 3
 
