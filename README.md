@@ -6,6 +6,8 @@ do change from feature 2
 
 Some change here.
 
+Some lines Changes from GitHub directly
+
 changes from feature 3
 
 Hello This is version control is awesome
